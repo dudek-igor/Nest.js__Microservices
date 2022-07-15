@@ -1,13 +1,13 @@
-#  Microservices in Nest.js
+# Microservices in Nest.js
 
 #### Stack
 
 - Nest.js - Node.js framework
 - RabbitMQ - message broker,
 - Docker - hold services in images,
-- MongoDB - persist data,
+- MongoDB - persist data via mongo replica set from [Bitnami](https://github.com/bitnami/bitnami-docker-mongodb),
 
-<!-- 
+<!--
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
