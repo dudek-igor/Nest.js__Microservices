@@ -1,3 +1,4 @@
+import { CreateOrderDto } from '@app/interfaces';
 import {
   IsNotEmpty,
   IsPhoneNumber,
@@ -5,14 +6,14 @@ import {
   IsString,
 } from 'class-validator';
 
-export class CreateOrderDto {
+export class CreateOrderRequest implements CreateOrderDto {
   @IsString()
   @IsNotEmpty()
-  name: string;
+  name;
 
   @IsPositive()
-  price: number;
+  price;
 
   @IsPhoneNumber()
-  phoneNumber: string;
+  phoneNumber;
 }
